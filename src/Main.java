@@ -10,7 +10,7 @@ public class Main {
     public static void newGame(List<Integer> results){
         Random random = new Random();
         int rndNumber = random.nextInt(101);
-        System.out.println("Угадайте рандомное число от 0 до 100" + rndNumber);
+        System.out.println("Угадайте рандомное число от 0 до 100");
         numberCheck(rndNumber, 1, results);
         System.out.println("RESULT - Результаты\nNEW - Новая игра");
         Scanner scan = new Scanner(System.in);
@@ -68,7 +68,7 @@ public class Main {
         else
         {
             results.sort(Comparator.naturalOrder());
-            System.out.println("Результаты:" + results);
+            System.out.println("Лучший результат: " + results.get(0) + "\nРезультаты:" + results);
         }
     }
 }
